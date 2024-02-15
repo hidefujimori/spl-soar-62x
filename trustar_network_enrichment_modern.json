@@ -1,0 +1,971 @@
+{
+    "blockly": false,
+    "blockly_xml": "<xml></xml>",
+    "category": "Use Cases",
+    "coa": {
+        "data": {
+            "description": "Gather threat intelligence information about IP addresses, domain names, and URLs from TruSTAR to enrich any event containing these indicators.",
+            "edges": [
+                {
+                    "id": "port_0_to_port_2",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "2",
+                    "targetPort": "2_in"
+                },
+                {
+                    "id": "port_0_to_port_4",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "4",
+                    "targetPort": "4_in"
+                },
+                {
+                    "id": "port_0_to_port_3",
+                    "sourceNode": "0",
+                    "sourcePort": "0_out",
+                    "targetNode": "3",
+                    "targetPort": "3_in"
+                },
+                {
+                    "id": "port_16_to_port_15",
+                    "sourceNode": "16",
+                    "sourcePort": "16_out",
+                    "targetNode": "15",
+                    "targetPort": "15_in"
+                },
+                {
+                    "id": "port_11_to_port_1",
+                    "sourceNode": "11",
+                    "sourcePort": "11_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_14_to_port_1",
+                    "sourceNode": "14",
+                    "sourcePort": "14_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_13_to_port_1",
+                    "sourceNode": "13",
+                    "sourcePort": "13_out",
+                    "targetNode": "1",
+                    "targetPort": "1_in"
+                },
+                {
+                    "id": "port_3_to_port_6",
+                    "sourceNode": "3",
+                    "sourcePort": "3_out",
+                    "targetNode": "6",
+                    "targetPort": "6_in"
+                },
+                {
+                    "id": "port_4_to_port_7",
+                    "sourceNode": "4",
+                    "sourcePort": "4_out",
+                    "targetNode": "7",
+                    "targetPort": "7_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_6_to_port_16",
+                    "sourceNode": "6",
+                    "sourcePort": "6_out",
+                    "targetNode": "16",
+                    "targetPort": "16_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_7_to_port_12",
+                    "sourceNode": "7",
+                    "sourcePort": "7_out",
+                    "targetNode": "12",
+                    "targetPort": "12_in"
+                },
+                {
+                    "id": "port_15_to_port_9",
+                    "sourceNode": "15",
+                    "sourcePort": "15_out",
+                    "targetNode": "9",
+                    "targetPort": "9_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_9_to_port_14",
+                    "sourceNode": "9",
+                    "sourcePort": "9_out",
+                    "targetNode": "14",
+                    "targetPort": "14_in"
+                },
+                {
+                    "id": "port_17_to_port_8",
+                    "sourceNode": "17",
+                    "sourcePort": "17_out",
+                    "targetNode": "8",
+                    "targetPort": "8_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_8_to_port_11",
+                    "sourceNode": "8",
+                    "sourcePort": "8_out",
+                    "targetNode": "11",
+                    "targetPort": "11_in"
+                },
+                {
+                    "id": "port_12_to_port_10",
+                    "sourceNode": "12",
+                    "sourcePort": "12_out",
+                    "targetNode": "10",
+                    "targetPort": "10_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_10_to_port_13",
+                    "sourceNode": "10",
+                    "sourcePort": "10_out",
+                    "targetNode": "13",
+                    "targetPort": "13_in"
+                },
+                {
+                    "id": "port_2_to_port_5",
+                    "sourceNode": "2",
+                    "sourcePort": "2_out",
+                    "targetNode": "5",
+                    "targetPort": "5_in"
+                },
+                {
+                    "conditions": [
+                        {
+                            "index": 0
+                        }
+                    ],
+                    "id": "port_5_to_port_17",
+                    "sourceNode": "5",
+                    "sourcePort": "5_out",
+                    "targetNode": "17",
+                    "targetPort": "17_in"
+                }
+            ],
+            "hash": "e7a92faf1ca5bb55f5443d8dcc0e0a132130c900",
+            "nodes": {
+                "0": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_start",
+                        "id": "0",
+                        "type": "start"
+                    },
+                    "errors": {},
+                    "id": "0",
+                    "type": "start",
+                    "warnings": {},
+                    "x": 200,
+                    "y": 80
+                },
+                "1": {
+                    "data": {
+                        "advanced": {
+                            "join": []
+                        },
+                        "functionName": "on_finish",
+                        "id": "1",
+                        "type": "end"
+                    },
+                    "errors": {},
+                    "id": "1",
+                    "type": "end",
+                    "warnings": {},
+                    "x": 480,
+                    "y": 1480
+                },
+                "10": {
+                    "data": {
+                        "advanced": {
+                            "customName": "url_report_check",
+                            "customNameId": 0,
+                            "description": "Check if there is a report.",
+                            "join": [],
+                            "note": "Check if there is a report."
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "hunt_url_1:action_result.data.*.report_id",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "logic": "and"
+                            }
+                        ],
+                        "functionId": 6,
+                        "functionName": "url_report_check",
+                        "id": "10",
+                        "type": "filter"
+                    },
+                    "errors": {},
+                    "id": "10",
+                    "type": "filter",
+                    "warnings": {},
+                    "x": 720,
+                    "y": 860
+                },
+                "11": {
+                    "data": {
+                        "action": "get report",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "get ip report",
+                            "customNameId": 0,
+                            "description": "Get the TruSTAR report.",
+                            "join": [],
+                            "note": "Get the TruSTAR report."
+                        },
+                        "connector": "TruSTAR",
+                        "connectorConfigs": [
+                            "trustar"
+                        ],
+                        "connectorId": "536ae6e0-72b2-4ae1-9520-810acaddd2d1",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "get_ip_report",
+                        "id": "11",
+                        "parameters": {
+                            "id_type": "",
+                            "report_id": "hunt_ip:action_result.data.*.report_id"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "report_id"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "11",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 160,
+                    "y": 1000
+                },
+                "12": {
+                    "data": {
+                        "action": "hunt url",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "description": "Collect threat information about the URLs in TruSTAR.",
+                            "join": [],
+                            "note": "Collect threat information about the URLs in TruSTAR."
+                        },
+                        "connector": "TruSTAR",
+                        "connectorConfigs": [
+                            "trustar"
+                        ],
+                        "connectorId": "536ae6e0-72b2-4ae1-9520-810acaddd2d1",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "hunt_url_1",
+                        "id": "12",
+                        "parameters": {
+                            "url": "filtered-data:url_filter_none:condition_1:collect_url:custom_function_result.data.*.artifact_value"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "url"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "12",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 720,
+                    "y": 620
+                },
+                "13": {
+                    "data": {
+                        "action": "get report",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "get url report",
+                            "customNameId": 0,
+                            "delayTime": 0.0,
+                            "description": "Get the TruSTAR report.",
+                            "join": [],
+                            "note": "Get the TruSTAR report."
+                        },
+                        "connector": "TruSTAR",
+                        "connectorConfigs": [
+                            "trustar"
+                        ],
+                        "connectorId": "536ae6e0-72b2-4ae1-9520-810acaddd2d1",
+                        "connectorVersion": "v1",
+                        "functionId": 3,
+                        "functionName": "get_url_report",
+                        "id": "13",
+                        "parameters": {
+                            "id_type": "",
+                            "report_id": "hunt_url_1:action_result.data.*.report_id"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "report_id"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "13",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 720,
+                    "y": 1000
+                },
+                "14": {
+                    "data": {
+                        "action": "get report",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "get resolved ip report",
+                            "customNameId": 0,
+                            "description": "Get the TruSTAR report.",
+                            "join": [],
+                            "note": "Get the TruSTAR report."
+                        },
+                        "connector": "TruSTAR",
+                        "connectorConfigs": [
+                            "trustar"
+                        ],
+                        "connectorId": "536ae6e0-72b2-4ae1-9520-810acaddd2d1",
+                        "connectorVersion": "v1",
+                        "functionId": 2,
+                        "functionName": "get_resolved_ip_report",
+                        "id": "14",
+                        "parameters": {
+                            "id_type": "",
+                            "report_id": "hunt_resolved_ip:action_result.data.*.report_id"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "report_id"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "14",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 440,
+                    "y": 1240
+                },
+                "15": {
+                    "data": {
+                        "action": "hunt ip",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "hunt resolved ip",
+                            "customNameId": 0,
+                            "description": "Collect threat information about the resolved IP addresses in TruSTAR.",
+                            "join": [],
+                            "note": "Collect threat information about the resolved IP addresses in TruSTAR."
+                        },
+                        "connector": "TruSTAR",
+                        "connectorConfigs": [
+                            "trustar"
+                        ],
+                        "connectorId": "536ae6e0-72b2-4ae1-9520-810acaddd2d1",
+                        "connectorVersion": "v1",
+                        "functionId": 2,
+                        "functionName": "hunt_resolved_ip",
+                        "id": "15",
+                        "parameters": {
+                            "ip": "lookup_domain_1:action_result.data.*.record_info_objects.*.record_info"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "ip"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "15",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 440,
+                    "y": 860
+                },
+                "16": {
+                    "data": {
+                        "action": "lookup domain",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "description": "Resolve the domain names to IP addresses using DNS.",
+                            "join": [],
+                            "note": "Resolve the domain names to IP addresses using DNS."
+                        },
+                        "connector": "DNS",
+                        "connectorConfigs": [
+                            "google_dns"
+                        ],
+                        "connectorId": "876ab991-313e-48e7-bccd-e8c9650c239c",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "lookup_domain_1",
+                        "id": "16",
+                        "parameters": {
+                            "domain": "filtered-data:domain_filter_none:condition_1:collect_domain:custom_function_result.data.*.artifact_value",
+                            "ip": "collect_domain:custom_function_result.data.*.artifact_value",
+                            "type": ""
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "domain"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "16",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 440,
+                    "y": 620
+                },
+                "17": {
+                    "data": {
+                        "action": "hunt ip",
+                        "actionType": "investigate",
+                        "advanced": {
+                            "customName": "hunt ip",
+                            "customNameId": 0,
+                            "description": "Collect threat information about the IP addresses in TruSTAR.",
+                            "join": [],
+                            "note": "Collect threat information about the IP addresses in TruSTAR."
+                        },
+                        "connector": "TruSTAR",
+                        "connectorConfigs": [
+                            "trustar"
+                        ],
+                        "connectorId": "536ae6e0-72b2-4ae1-9520-810acaddd2d1",
+                        "connectorVersion": "v1",
+                        "functionId": 1,
+                        "functionName": "hunt_ip",
+                        "id": "17",
+                        "parameters": {
+                            "ip": "collect_ip:custom_function_result.data.*.artifact_value"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "ip"
+                            }
+                        ],
+                        "type": "action"
+                    },
+                    "errors": {},
+                    "id": "17",
+                    "type": "action",
+                    "warnings": {},
+                    "x": 160,
+                    "y": 620
+                },
+                "2": {
+                    "data": {
+                        "advanced": {
+                            "customName": "collect ip",
+                            "customNameId": 0,
+                            "description": "Collect all IP addresses in the container.",
+                            "join": [],
+                            "note": "Collect all IP addresses in the container."
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "collect_by_cef_type",
+                            "repoName": "community"
+                        },
+                        "functionId": 1,
+                        "functionName": "collect_ip",
+                        "id": "2",
+                        "type": "utility",
+                        "utilities": {
+                            "collect_by_cef_type": {
+                                "description": "Collect all artifact values that match the desired CEF data types, such as \"ip\", \"url\", \"sha1\", or \"all\". Optionally also filter for artifacts that have the specified tags.",
+                                "fields": [
+                                    {
+                                        "dataTypes": [
+                                            "phantom container id"
+                                        ],
+                                        "description": "Container ID or container object.",
+                                        "inputType": "item",
+                                        "label": "container",
+                                        "name": "container",
+                                        "placeholder": "container:id",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "The CEF data type to collect values for. This could be a single string or a comma separated list such as \"hash,filehash,file_hash\". The special value \"all\" can also be used to collect all field values from all artifacts.",
+                                        "inputType": "item",
+                                        "label": "data_types",
+                                        "name": "data_types",
+                                        "placeholder": "data_type1, data_type2, data_type3",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "If tags are provided, only return fields from artifacts that have all of the provided tags. This could be an individual tag or a comma separated list.",
+                                        "inputType": "item",
+                                        "label": "tags",
+                                        "name": "tags",
+                                        "placeholder": "tag1,tag2,tag3",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "Defaults to 'new'. Define custom scope. Advanced Settings Scope is not passed to a custom function. Options are 'all' or 'new'.",
+                                        "inputType": "item",
+                                        "label": "scope",
+                                        "name": "scope",
+                                        "placeholder": "new",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    }
+                                ],
+                                "label": "collect_by_cef_type",
+                                "name": "collect_by_cef_type"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "collect_by_cef_type": {
+                                "container": "container:id",
+                                "data_types": "ip",
+                                "scope": null,
+                                "tags": null
+                            }
+                        }
+                    },
+                    "errors": {},
+                    "id": "2",
+                    "tab": "customFunctions",
+                    "type": "utility",
+                    "userCode": "    # Write your custom code here...",
+                    "warnings": {},
+                    "x": 160,
+                    "y": 240
+                },
+                "3": {
+                    "data": {
+                        "advanced": {
+                            "customName": "collect domain",
+                            "customNameId": 0,
+                            "description": "Collect all domain names in the container.",
+                            "join": [],
+                            "note": "Collect all domain names in the container."
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "collect_by_cef_type",
+                            "repoName": "community"
+                        },
+                        "functionId": 3,
+                        "functionName": "collect_domain",
+                        "id": "3",
+                        "type": "utility",
+                        "utilities": {
+                            "collect_by_cef_type": {
+                                "description": "Collect all artifact values that match the desired CEF data types, such as \"ip\", \"url\", \"sha1\", or \"all\". Optionally also filter for artifacts that have the specified tags.",
+                                "fields": [
+                                    {
+                                        "dataTypes": [
+                                            "phantom container id"
+                                        ],
+                                        "description": "Container ID or container object.",
+                                        "inputType": "item",
+                                        "label": "container",
+                                        "name": "container",
+                                        "placeholder": "container:id",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "The CEF data type to collect values for. This could be a single string or a comma separated list such as \"hash,filehash,file_hash\". The special value \"all\" can also be used to collect all field values from all artifacts.",
+                                        "inputType": "item",
+                                        "label": "data_types",
+                                        "name": "data_types",
+                                        "placeholder": "data_type1, data_type2, data_type3",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "If tags are provided, only return fields from artifacts that have all of the provided tags. This could be an individual tag or a comma separated list.",
+                                        "inputType": "item",
+                                        "label": "tags",
+                                        "name": "tags",
+                                        "placeholder": "tag1,tag2,tag3",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "Defaults to 'new'. Define custom scope. Advanced Settings Scope is not passed to a custom function. Options are 'all' or 'new'.",
+                                        "inputType": "item",
+                                        "label": "scope",
+                                        "name": "scope",
+                                        "placeholder": "new",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    }
+                                ],
+                                "label": "collect_by_cef_type",
+                                "name": "collect_by_cef_type"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "collect_by_cef_type": {
+                                "container": "container:id",
+                                "data_types": "domain",
+                                "scope": null,
+                                "tags": null
+                            }
+                        }
+                    },
+                    "errors": {},
+                    "id": "3",
+                    "tab": "customFunctions",
+                    "type": "utility",
+                    "userCode": "    # Write your custom code here...",
+                    "warnings": {},
+                    "x": 440,
+                    "y": 240
+                },
+                "4": {
+                    "data": {
+                        "advanced": {
+                            "customName": "collect url",
+                            "customNameId": 0,
+                            "description": "Collect all URLs in the container.",
+                            "join": [],
+                            "note": "Collect all URLs in the container."
+                        },
+                        "customFunction": {
+                            "draftMode": false,
+                            "name": "collect_by_cef_type",
+                            "repoName": "community"
+                        },
+                        "functionId": 2,
+                        "functionName": "collect_url",
+                        "id": "4",
+                        "type": "utility",
+                        "utilities": {
+                            "collect_by_cef_type": {
+                                "description": "Collect all artifact values that match the desired CEF data types, such as \"ip\", \"url\", \"sha1\", or \"all\". Optionally also filter for artifacts that have the specified tags.",
+                                "fields": [
+                                    {
+                                        "dataTypes": [
+                                            "phantom container id"
+                                        ],
+                                        "description": "Container ID or container object.",
+                                        "inputType": "item",
+                                        "label": "container",
+                                        "name": "container",
+                                        "placeholder": "container:id",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "The CEF data type to collect values for. This could be a single string or a comma separated list such as \"hash,filehash,file_hash\". The special value \"all\" can also be used to collect all field values from all artifacts.",
+                                        "inputType": "item",
+                                        "label": "data_types",
+                                        "name": "data_types",
+                                        "placeholder": "data_type1, data_type2, data_type3",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "If tags are provided, only return fields from artifacts that have all of the provided tags. This could be an individual tag or a comma separated list.",
+                                        "inputType": "item",
+                                        "label": "tags",
+                                        "name": "tags",
+                                        "placeholder": "tag1,tag2,tag3",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    },
+                                    {
+                                        "dataTypes": [],
+                                        "description": "Defaults to 'new'. Define custom scope. Advanced Settings Scope is not passed to a custom function. Options are 'all' or 'new'.",
+                                        "inputType": "item",
+                                        "label": "scope",
+                                        "name": "scope",
+                                        "placeholder": "new",
+                                        "renderType": "datapath",
+                                        "required": false
+                                    }
+                                ],
+                                "label": "collect_by_cef_type",
+                                "name": "collect_by_cef_type"
+                            }
+                        },
+                        "utilityType": "custom_function",
+                        "values": {
+                            "collect_by_cef_type": {
+                                "container": "container:id",
+                                "data_types": "url",
+                                "scope": null,
+                                "tags": null
+                            }
+                        }
+                    },
+                    "errors": {},
+                    "id": "4",
+                    "tab": "customFunctions",
+                    "type": "utility",
+                    "userCode": "    # Write your custom code here...",
+                    "warnings": {},
+                    "x": 720,
+                    "y": 240
+                },
+                "5": {
+                    "data": {
+                        "advanced": {
+                            "customName": "ip_filter_none",
+                            "customNameId": 0,
+                            "description": "Filter out nonexistent IP addresses.",
+                            "join": [],
+                            "note": "Filter out nonexistent IP addresses."
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "collect_ip:custom_function_result.data.*.artifact_value",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "logic": "and"
+                            }
+                        ],
+                        "functionId": 7,
+                        "functionName": "ip_filter_none",
+                        "id": "5",
+                        "type": "filter"
+                    },
+                    "errors": {},
+                    "id": "5",
+                    "type": "filter",
+                    "warnings": {},
+                    "x": 160,
+                    "y": 480
+                },
+                "6": {
+                    "data": {
+                        "advanced": {
+                            "customName": "domain_filter_none",
+                            "customNameId": 0,
+                            "description": "Filter out nonexistent domain names.",
+                            "join": [],
+                            "note": "Filter out nonexistent domain names."
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "collect_domain:custom_function_result.data.*.artifact_value",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "logic": "and"
+                            }
+                        ],
+                        "functionId": 2,
+                        "functionName": "domain_filter_none",
+                        "id": "6",
+                        "type": "filter"
+                    },
+                    "errors": {},
+                    "id": "6",
+                    "type": "filter",
+                    "warnings": {},
+                    "x": 440,
+                    "y": 480
+                },
+                "7": {
+                    "data": {
+                        "advanced": {
+                            "customName": "url_filter_none",
+                            "customNameId": 0,
+                            "description": "Filter out nonexistent URLs.",
+                            "join": [],
+                            "note": "Filter out nonexistent URLs."
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "collect_url:custom_function_result.data.*.artifact_value",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "logic": "and"
+                            }
+                        ],
+                        "functionId": 3,
+                        "functionName": "url_filter_none",
+                        "id": "7",
+                        "type": "filter"
+                    },
+                    "errors": {},
+                    "id": "7",
+                    "type": "filter",
+                    "warnings": {},
+                    "x": 720,
+                    "y": 480
+                },
+                "8": {
+                    "data": {
+                        "advanced": {
+                            "customName": "ip_report_check",
+                            "customNameId": 0,
+                            "description": "Check if there is a report.",
+                            "join": [],
+                            "note": "Check if there is a report."
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "hunt_ip:action_result.data.*.report_id",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "logic": "and"
+                            }
+                        ],
+                        "functionId": 5,
+                        "functionName": "ip_report_check",
+                        "id": "8",
+                        "type": "filter"
+                    },
+                    "errors": {},
+                    "id": "8",
+                    "type": "filter",
+                    "warnings": {},
+                    "x": 160,
+                    "y": 860
+                },
+                "9": {
+                    "data": {
+                        "advanced": {
+                            "customName": "resolved_ip_report_check",
+                            "customNameId": 0,
+                            "description": "Check if there is a report.",
+                            "join": [],
+                            "note": "Check if there is a report."
+                        },
+                        "conditions": [
+                            {
+                                "comparisons": [
+                                    {
+                                        "conditionIndex": 0,
+                                        "op": "!=",
+                                        "param": "hunt_resolved_ip:action_result.data.*.report_id",
+                                        "value": ""
+                                    }
+                                ],
+                                "conditionIndex": 0,
+                                "logic": "and"
+                            }
+                        ],
+                        "functionId": 4,
+                        "functionName": "resolved_ip_report_check",
+                        "id": "9",
+                        "type": "filter"
+                    },
+                    "errors": {},
+                    "id": "9",
+                    "type": "filter",
+                    "warnings": {},
+                    "x": 440,
+                    "y": 1100
+                }
+            },
+            "notes": "This playbook uses the following Apps:\n - TruSTAR (hunt ip, hunt url, and get report) [asset name = trustar] - Query for threat intelligence\n\nDeployment Notes:\n - This playbook dynamically finds indicators based on CEF type, so it should work across a variety of event types.",
+            "origin": {
+                "playbook_id": 135,
+                "playbook_name": "trustar_network_enrichment",
+                "playbook_repo_id": 1,
+                "playbook_repo_name": "community"
+            }
+        },
+        "input_spec": null,
+        "output_spec": null,
+        "playbook_type": "automation",
+        "python_version": "3",
+        "schema": "5.0.10",
+        "version": "4.10.6.61906"
+    },
+    "create_time": "2024-02-15T03:13:29.261244+00:00",
+    "draft_mode": false,
+    "labels": [
+        "events"
+    ],
+    "tags": []
+}
